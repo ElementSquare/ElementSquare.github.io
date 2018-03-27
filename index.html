@@ -22,11 +22,11 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
     <!-- favicon icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
-    <link rel="manifest" href="/icon/site.webmanifest">
-    <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -60,7 +60,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="cs/index.html"><img src="img/czech_flag.png" widht="20" height="20"></a>
+              <a href="cs/index.html"><img src="img/czech-flag.png" widht="20" height="20"></a>
             </li>
           </ul>
         </div>
@@ -82,7 +82,7 @@
                 <div class="device">
                   <div class="screen">
                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-1.png" class="img-fluid" alt="">
+                    <img src="img/main-menu-screen-en.png" class="img-fluid" alt="">
                   </div>
                   <!-- <div class="button">
                     < You can hook the "home button" to some JavaScript events or just remove it 
@@ -103,18 +103,19 @@
             <p>Available for iOS mobile devices</p>
             <div class="badges">
               <!--<a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a> -->
-              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+              <a class="badge-link" href="https://itunes.apple.com/us/app/element-square/id1363492996?mt=8&ign-mpt=uo%3D4"><img src="img/app-store-badge.svg" alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+
     <section class="features" id="features">
       <div class="container">
         <div class="section-heading text-center">
           <h2>Much chemistry, much fun</h2>
-          <p class="text-muted">Check out what you can do with this app</p>
+          <p class="text-muted">Check out what this app offers</p>
           <hr>
         </div>
         <div class="row">
@@ -124,7 +125,7 @@
                 <div class="device">
                   <div class="screen">
                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-2.png" class="img-fluid" alt="">
+                    <img id = "screen-img" src="img/symbols-game-screen-en.png" class="img-fluid" alt="">
                   </div>
                   <!--<div class="button">
                     <You can hook the "home button" to some JavaScript events or just remove it
@@ -136,15 +137,14 @@
           <div class="col-lg-8 my-auto">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6" onClick="changePhoneScreen('img/symbols-game-screen-en.png')" >
                   <div class="feature-item">
-                    <i class="icon-element text-primary"></i>
-
+                      <i class="icon-element text-primary"></i>
                     <h3>Learn chemical elements</h3>
                     <p class="text-muted">Learn chemical symbols in game like scenario</p>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" onClick="changePhoneScreen('img/groups-game-screen-en.png')">
                   <div class="feature-item">
                     <i class="icon-groups text-primary"></i>
                     <h3>Practise element groups</h3>
@@ -153,7 +153,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6" onClick="changePhoneScreen('img/fun-fact-screen-en.png')">
                   <div class="feature-item">
                     <i class="icon-atom text-primary"></i>
                     <h3>Unlock Fun-Facts</h3>
@@ -178,7 +178,7 @@
     <section class="contact bg-primary" id="contact">
       <div class="container">
         <h2>Contact us <i class="fa fa-envelope"></i></h2>
-        <h3>elementsquare2@gmail.com</h3>
+        <h3>support@elementsquare.eu</h3>
        <!-- <ul class="list-inline list-social">
           <li class="list-inline-item social-twitter">
             <a href="#">
@@ -224,7 +224,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
+    <script src="js/new-age.js"></script>
 
   </body>
 

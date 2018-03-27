@@ -40,3 +40,8 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+function changePhoneScreen(path) {
+  
+  document.getElementById("screen-img").src = path //"img/symbols-game-screen-en.png"
+}
